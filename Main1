@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int Main()
+{
+   char ans1;
+   char ans2;
+   FILE* f =  fopen(“rules.txt” , “r”); 
+   char rules[500];
+    
+
+   printf ("Do you wanna play Mastermind? (y/n) ");
+   scanf(“%c” , &ans1);   
+
+   if (ans1 == “y”) {
+      fgets(rules, 500, f);     
+      printf(“%s \n” , rules);
+   }
+
+   printf ("Are you ready to play? (y/n)");
+   scanf(“%c” , &ans2);
