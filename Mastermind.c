@@ -41,7 +41,7 @@ Int MasterMind()
   }
   if (guess != r4)
   {
-	  printf(“0 ”);
+	  printf(“0 \n”);
   }
 
 {
