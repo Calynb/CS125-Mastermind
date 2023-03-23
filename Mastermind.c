@@ -8,6 +8,7 @@ int masterMind()
    PatternGenerator();
    char guess1, guess2, guess3, guess4;
    int count = 0;
+   char r1, r2, r3, r4;
  
   printf("Type your 4 guesses: \n");
   scanf("%c" "%c" "%c" "%c" , &guess1, &guess2, &guess3, &guess4);
@@ -39,7 +40,8 @@ int masterMind()
 	printf(“0 \n”);
     }
   count = count + 1;
-  
+  printf(" Count: %d \n" ,count);
+	  
   printf("Type your 4 guesses: \n");
   scanf("%c" "%c" "%c" "%c" , &guess1, &guess2, &guess3, &guess4);
   }
