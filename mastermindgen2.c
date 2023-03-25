@@ -1,12 +1,10 @@
 #include "PatternGen.h"
-int PatternGenerator();
 
-int MasterMind() {
-    rand_nums rn;
+int MasterMind() {         
+   rand_nums rn;
    rn = PatternGenerator();
    char guess1, guess2, guess3, guess4;
    int count = 0;
-   //char r1, r2, r3, r4;
    
   printf("Type your 4 guesses: \n");
   scanf("%c" "%c" "%c" "%c" , &guess1, &guess2, &guess3, &guess4);
@@ -46,7 +44,7 @@ int MasterMind() {
   
   }
 }
-
+// These lines are to run it in GDB:
 //int main(){
   //  MasterMind();
 //}
