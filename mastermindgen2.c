@@ -9,7 +9,7 @@ int MasterMind() {
   printf("Type your 4 guesses: \n");
   scanf("%c" "%c" "%c" "%c" , &guess1, &guess2, &guess3, &guess4);
      
-  while ((guess1 != rn.num_1) && (guess2 != rn.num_2) && (guess3 != rn.num_3) && (guess4 != rn.num_4)) {
+  while ((guess1 != rn.num_1) || (guess2 != rn.num_2) || (guess3 != rn.num_3) || (guess4 != rn.num_4)) {
 // create if loop, if the answer is correct, print 1, if incorrect, print 0
     if (guess1 == rn.num_1){
 	printf("1 ");
@@ -40,7 +40,7 @@ int MasterMind() {
   printf("Count: %d\n",count);
   
   printf("Type your 4 guesses: \n");
-  scanf("%c " "%c " "%c " "%c ", &guess1, &guess2, &guess3, &guess4);
+  scanf("%c" " %c" "%c " "%c ", &guess1, &guess2, &guess3, &guess4);
   
   }
 }
