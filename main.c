@@ -1,6 +1,6 @@
 #include "PatternGen.h" 
 // Prototypes of functions used
-int PatternGenerator();
+rand_nums PatternGenerator();
 int MasterMind();
    
 int main()
