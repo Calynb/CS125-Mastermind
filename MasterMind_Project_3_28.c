@@ -16,10 +16,12 @@ int main()
       fgets(rules, 500, f);             //prints the rules from the text file
       printf("%s \n" , rules);
    }
-   printf ("Are you ready to play? (y/n)");
+   printf("Are you ready to play? (y/n)");
    scanf(" %c" , &ans2);
       while (ans2 == 'y') { 
       MasterMind();
       printf("Do you want to play again?\n");  
       scanf("%c" , &ans2);
       }
+   printf("Have a nice day!\n");
+}
