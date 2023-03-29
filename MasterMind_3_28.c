@@ -3,50 +3,50 @@
 #include <time.h>
 #include "PatternGen.h"
 
-
-
 int MasterMind()
 {
    rand_nums rn;
    rn=PatternGenerator();
-   char guess1, guess2, guess3, guess4;
+   char guess_1, guess_2, guess_3, guess_4;
    int count = 0;
  
   printf("Type your 4 guesses: \n");
-  scanf(" %c%*c%c%*c%c%*c%c" , &guess1, &guess2, &guess3, &guess4);
-  printf("GUESS 1=%c GUESS2=%c GUESS3=%c GUESS4=%c \n", guess1, guess2, guess3, guess4);
+  scanf(" %c%*c%c%*c%c%*c%c" , &guess_1, &guess_2, &guess_3, &guess_4);
+  printf("GUESS 1=%c GUESS2=%c GUESS3=%c GUESS4=%c \n", guess_1, guess_2, guess_3, guess_4);
      
-  while ((guess1 != rn.num_1) || (guess2 != rn.num_2) || (guess3 != rn.num_3) || (guess4 != rn.num_4) || (count <12)) {
-// create if loop, if the answer is correct, print 1, if incorrect, print 0
-    if (guess1 == rn.num_1){
+  while ((guess_1 != rn.num_1) || (guess_2 != rn.num_2) || (guess_3 != rn.num_3) || (guess_4 != rn.num_4) || (count <12)) {
+// if loops: if the answer is correct, print 1, if incorrect, print 0
+    if (guess_1 == rn.num_1){
 	printf("1 ");
     }
-    if (guess1 != rn.num_1){
+    if (guess_1 != rn.num_1){
 	printf("0 ");
     }
-    if (guess2 == rn.num_2){
+    if (guess_2 == rn.num_2){
 	printf("1 ");
     }
-    if (guess2 != rn.num_2){
+    if (guess_2 != rn.num_2){
 	printf("0 ");
     }
-    if (guess3 == rn.num_3){
+    if (guess_3 == rn.num_3){
 	printf("1 ");
     }
-    if (guess3 != rn.num_3){
+    if (guess_3 != rn.num_3){
 	printf("0 ");
     }
-    if (guess4 == rn.num_4){
+    if (guess_4 == rn.num_4){
 	printf("1 ");
     }
-    if (guess4 != rn.num_4){
+    if (guess_4 != rn.num_4){
 	printf("0 \n");
     }
   count = count + 1;
   printf(" Count: %d \n" ,count);
-	  
+	  // if ((guess_1 != rn.num_1) && (guess_2 != rn.num_2) && (guess_3 != rn.num_3) && (guess_4 != rn.num_4)) {
+	  // break
+          // }
   printf("Type your 4 guesses: \n");
-  scanf(" %c%*c%c%*c%c%*c%c", &guess1, &guess2, &guess3, &guess4);
+  scanf(" %c%*c%c%*c%c%*c%c", &guess_1, &guess_2, &guess_3, &guess_4);
   }
 
 }
