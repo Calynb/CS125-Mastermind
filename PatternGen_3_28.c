@@ -1,4 +1,9 @@
-#include <stdio.h>
+/************
+* Calyn, Lauren, and Monica
+* CS 125 Project
+* This file contains all the header files we use and the random numbers structure
+*************/
+#include <stdio.h>            // The header files are listed here
 #include <stdlib.h>
 #include <time.h>
 
