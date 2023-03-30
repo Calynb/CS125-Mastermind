@@ -1,7 +1,8 @@
 /************
-* Calyn, Lauren, and Monica
+* Author: Calyn Bauer, Lauren Bailey, and Monica Hyndman
 * CS 125 Project
-* This file contains all the header files we use and the random numbers structure
+* Purpose: This file contains all the header files we use 
+* and the random numbers structure
 * Version 1.0  Mar 7, 2023
 *  Version 1.1  Mar 9, 2023
 *  Version 1.2  Mar 21, 2023
