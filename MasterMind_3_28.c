@@ -1,7 +1,16 @@
 /************
 * Calyn, Lauren, and Monica
 * CS 125 Project
-* This file takes the user's guesses and compares them to the code until they get all 4 correct.
+* Purpose: This file takes the user's guesses and compares them 
+* to the code until they get all 4 correct.
+* Version 1.0  Mar 7, 2023
+*  Version 1.1  Mar 9, 2023
+*  Version 1.2  Mar 21, 2023
+*  Version 1.3  Mar 23, 2023
+*  Version 1.4  Mar 28, 2023
+*  Version 1.5  Mar 29, 2023
+*  Version 1.6  Mar 30, 2023
+
 *************/
 #include "PatternGen.h"
 int MasterMind()
