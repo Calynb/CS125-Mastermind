@@ -1,8 +1,8 @@
 /************
-* Calyn, Lauren, and Monica
+* Author: Calyn Bauer, Lauren Bailey, and Monica Hyndman
 * CS 125 Project
-* Purpose: This file takes the user's guesses and compares them 
-* to the code until they get all 4 correct.
+* Purpose: This file takes the user's guesses and compares 
+* them to the code until they get all 4 correct.
 * Version 1.0  Mar 7, 2023
 *  Version 1.1  Mar 9, 2023
 *  Version 1.2  Mar 21, 2023
