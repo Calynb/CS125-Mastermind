@@ -1,5 +1,10 @@
+/************
+* Calyn, Lauren, and Monica
+* CS 125 Project
+* This file asks the user if they want to play mastermind, then runs the MasterMind function if they do
+*************/
 #include "PatternGen.h" 
-// Prototypes of functions used
+// Prototypes of functions used:
 int MasterMind();
 char numbers_to_colors(int);
 int main()
@@ -13,13 +18,13 @@ int main()
    scanf("%c" , &ans_1);   
 
    if (ans_1 == 'y') {
-      fgets(rules, 500, f);             // Prints the rules from the text file
+      fgets(rules, 500, f);                  // Prints the rules from the text file
       printf("%s \n" , rules);
    }
    printf("Are you ready to play? (y/n)");
    scanf(" %c" , &ans_2);
       while (ans_2 == 'y') { 
-      MasterMind();                    // Plays the game
+      MasterMind();                          // Runs the game function
       printf("Do you want to play again?\n");  
       scanf("%c" , &ans_2);
       }
