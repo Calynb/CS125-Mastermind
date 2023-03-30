@@ -1,7 +1,7 @@
 /************
-* Calyn, Lauren, and Monica
+* Author: Calyn Bauer, Lauren Bailey, and Monica Hyndman
 * CS 125 Project
-* This file asks the user if they want to play mastermind, 
+* Purpose: This file asks the user if they want to play mastermind, 
 * then runs the MasterMind function if they do.
 * Version 1.0  Mar 7, 2023
 *  Version 1.1  Mar 9, 2023
