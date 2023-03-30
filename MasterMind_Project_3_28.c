@@ -21,7 +21,7 @@ int main()
       while (ans_2 == 'y') { 
       MasterMind();                    // Plays the game
       printf("Do you want to play again?\n");  
-      scanf("%c" , &ans2);
+      scanf("%c" , &ans_2);
       }
    printf("Have a nice day!\n");
 }
