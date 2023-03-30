@@ -1,7 +1,5 @@
-/************
-* Calyn, Lauren, and Monica
-* CS 125 Project
-* This file contains the rules of Mastermind
-* Created March 7th, updated March 30th, 2023
-*************/
 The code maker will pick 4 of 6 colors in a specific order. You, the code breaker, are to guess the colors in the correct order in 12 guesses or less. We will help you out by printing how many colors and in what position are correct, a 1 in the position means you were correct, and a 0 means you were incorrect. The colors you can choose from are red (R), purple (P), blue (B), cyan (C), yellow (Y), and green (G). For example, when you are prompted to guess, you will type a pattern like "R G Y B", and if the correct pattern is "R G C P", then the computer will print " 1 1 0 0". 
+
+
+
+// This text file contains the rules for Mastermind
