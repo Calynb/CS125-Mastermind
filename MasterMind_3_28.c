@@ -1,8 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+/************
+* Calyn, Lauren, and Monica
+* CS 125 Project
+* This file takes the user's guesses and compares them to the code until they get all 4 correct.
+*************/
 #include "PatternGen.h"
-
 int MasterMind()
 {
    rand_nums rn;
@@ -42,7 +43,7 @@ int MasterMind()
     }
   count = count + 1;
   printf(" Count: %d \n" ,count);
-    if (count > 12){
+    if (count >= 12){                              // If the user cannot guess the code in 12 turns, the game ends
 	 printf("Sorry, you are out of turns. \n ");
 	 break;
     }
