@@ -2,6 +2,13 @@
 * Calyn, Lauren, and Monica
 * CS 125 Project
 * This file contains all the header files we use and the random numbers structure
+* Version 1.0  Mar 7, 2023
+*  Version 1.1  Mar 9, 2023
+*  Version 1.2  Mar 21, 2023
+*  Version 1.3  Mar 23, 2023
+*  Version 1.4  Mar 28, 2023
+*  Version 1.5  Mar 29, 2023
+*  Version 1.6  Mar 30, 2023
 *************/
 #include <stdio.h>            // The header files are listed here
 #include <stdlib.h>
