@@ -34,7 +34,6 @@ int main()
    scanf(" %c" , &ans_2);
       while (ans_2 == 'y') { 
       MasterMind();                         // Runs the game function
-      printf("Thanks for playing!\n");
       printf("Do you want to play again?\n");  
       scanf("%c" , &ans_2);
       }
