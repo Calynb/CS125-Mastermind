@@ -17,7 +17,7 @@
 
 int MasterMind();
 char numbers_to_colors(int);
-  typedef struct random_numbers
+  typedef struct random_numbers       // The rand_nums structure is created here
   {
     char num_1;
     char num_2;
