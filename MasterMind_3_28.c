@@ -26,8 +26,7 @@ int MasterMind()
   printf("GUESS 1=%c GUESS2=%c GUESS3=%c GUESS4=%c \n", guess_1, guess_2, guess_3, guess_4);
      
   while ((guess_1 != rn.num_1) || (guess_2 != rn.num_2) || (guess_3 != rn.num_3) || (guess_4 != rn.num_4)) {
-// if loops: if the answer is correct, print 1, if incorrect, print 0
-    if (guess_1 == rn.num_1){
+    if (guess_1 == rn.num_1){                 // if loops: if the guess is correct, print 1, if incorrect, print 0
 	printf("1 ");
     }
     if (guess_1 != rn.num_1){
@@ -53,12 +52,14 @@ int MasterMind()
     }
   count = count + 1;
   printf(" Count: %d \n" ,count);
-    if (count >= 12){                              // If the user cannot guess the code in 12 turns, the game ends
+    if (count >= 12){                          // If the user cannot guess the code in 12 turns, the game ends
 	 printf("Sorry, you are out of turns. \n ");
 	 break;
     }
   printf("Type your 4 guesses: \n");
   scanf(" %c%*c%c%*c%c%*c%c", &guess_1, &guess_2, &guess_3, &guess_4);
   }
-
+  if (count > 12){
+	  printf("Congratulations! You are correct!\n");
+  }
 }
