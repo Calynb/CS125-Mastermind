@@ -11,6 +11,7 @@
 *  Version 2.3 Mar 29, 2023
 *  Version 2.4  Mar 30, 2023
 *************/
+#include "headers.h"
 char numbers_to_colors(int number)
 {
   // create if loops to assign a number to a color/letter.
