@@ -13,8 +13,8 @@
 *************/
 #include "PatternGen.h" 
 #include "headers.h"
-// Prototypes of functions used:
-int MasterMind();
+
+int MasterMind();                            // Prototypes of functions used:
 char numbers_to_colors(int);
 int main()
 {
@@ -33,7 +33,8 @@ int main()
    printf("Are you ready to play? (y/n)");
    scanf(" %c" , &ans_2);
       while (ans_2 == 'y') { 
-      MasterMind();                          // Runs the game function
+      MasterMind();                         // Runs the game function
+      printf("Thanks for playing!\n");
       printf("Do you want to play again?\n");  
       scanf("%c" , &ans_2);
       }
