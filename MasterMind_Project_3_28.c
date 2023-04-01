@@ -12,6 +12,7 @@
 *  Version 1.6  Mar 30, 2023
 *************/
 #include "PatternGen.h" 
+#include "headers.h"
 // Prototypes of functions used:
 int MasterMind();
 char numbers_to_colors(int);
