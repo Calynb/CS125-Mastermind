@@ -10,9 +10,10 @@
 *  Version 1.4  Mar 28, 2023
 *  Version 1.5  Mar 29, 2023
 *  Version 1.6  Mar 30, 2023
-
 *************/
 #include "PatternGen.h"
+#include "headers.h"
+
 int MasterMind()
 {
    rand_nums rn;
