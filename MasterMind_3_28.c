@@ -10,6 +10,7 @@
 *  Version 1.4  Mar 28, 2023
 *  Version 1.5  Mar 29, 2023
 *  Version 1.6  Mar 30, 2023
+*  Version 1.7  Apr 1, 2023
 *************/
 #include "PatternGen.h"
 #include "headers.h"
@@ -51,18 +52,14 @@ int MasterMind()
 	printf("0 \n");
     }
   count = count + 1;
-  if (count >= 12){                          // If the user cannot guess the code in 12 turns, the game ends
+    if (count >= 12){                          // If the user cannot guess the code in 12 turns, the game ends
 	 printf("Sorry, you are out of turns. \n ");
 	 break;
     }
   printf("Type your 4 guesses: \n");
   scanf(" %c%*c%c%*c%c%*c%c", &guess1, &guess2, &guess3, &guess4);
- }
-  
+  }
   if (count <= 12 && (guess1==rn.num_1) && (guess2==rn.num_2) && (guess3==rn.num_3) && (guess4==rn.num_4) ){
 	  printf("Congratulations! You are correct!\n");
-  }
- 
-  
-  
+  }    
 }
