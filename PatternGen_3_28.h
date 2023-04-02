@@ -11,7 +11,7 @@
 *  Version 2.3  Mar 29, 2023
 *  Version 2.4  Mar 30, 2023
 *************/
-#include "headers.h"            // The header files are listed here
+#include "headers.h"                  // The header files are listed here
 
 int MasterMind();
 char numbers_to_colors(int);
