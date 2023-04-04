@@ -57,9 +57,9 @@ int MasterMind()
 	 break;
     }
   printf("Type your 4 guesses: \n");
-  scanf(" %c%*c%c%*c%c%*c%c", &guess1, &guess2, &guess3, &guess4);
+  scanf(" %c%*c%c%*c%c%*c%c", &guess_1, &guess_2, &guess_3, &guess_4);
   }
-  if (count <= 12 && (guess1==rn.num_1) && (guess2==rn.num_2) && (guess3==rn.num_3) && (guess4==rn.num_4) ){
+  if (count <= 12 && (guess_1==rn.num_1) && (guess_2==rn.num_2) && (guess_3==rn.num_3) && (guess_4==rn.num_4) ){
 	  printf("Congratulations! You are correct!\n");
   }    
 }
