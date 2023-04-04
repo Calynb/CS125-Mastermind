@@ -21,6 +21,7 @@ int MasterMind()
    rn=PatternGenerator();
    char guess_1, guess_2, guess_3, guess_4;
    int count = 0;
+   char congrats[16] = {'C','o','n','g','r','a','t','u','l','a','t','i','o','n','s'} 
  
   printf("Type your 4 guesses: \n");
   scanf(" %c%*c%c%*c%c%*c%c" , &guess_1, &guess_2, &guess_3, &guess_4);
@@ -60,6 +61,7 @@ int MasterMind()
   scanf(" %c%*c%c%*c%c%*c%c", &guess_1, &guess_2, &guess_3, &guess_4);
   }
   if (count <= 12 && (guess_1==rn.num_1) && (guess_2==rn.num_2) && (guess_3==rn.num_3) && (guess_4==rn.num_4) ){
-	  printf("Congratulations! You are correct! The pattern was %c %c %c %c \n",rn.num_1, rn.num_2,rn.num_3, rn.num_4);
+	  printf("%s You are correct!\n", congrats[16]);
+	  printf("The pattern was %c %c %c %c \n",rn.num_1, rn.num_2,rn.num_3, rn.num_4);
   }    
 }
