@@ -50,6 +50,6 @@ rand_nums PatternGenerator()
     rn.num_3= numbers_to_colors(rand()%6+2);
     rn.num_4= numbers_to_colors(rand()%6+2);
   
-  printf("%c %c %c %c \n",rn.num_1, rn.num_2,rn.num_3, rn.num_4); // for testing purposes
+  //printf("%c %c %c %c \n",rn.num_1, rn.num_2,rn.num_3, rn.num_4); // for testing purposes
   return rn;
 }
