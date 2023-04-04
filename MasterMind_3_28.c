@@ -53,13 +53,13 @@ int MasterMind()
     }
   count = count + 1;
     if (count >= 12){                          // If the user cannot guess the code in 12 turns, the game ends
-	 printf("Sorry, you are out of turns. \n ");
+	 printf("Sorry, you are out of turns. The pattern was %c %c %c %c \n",rn.num_1, rn.num_2,rn.num_3, rn.num_4);
 	 break;
     }
   printf("Type your 4 guesses: \n");
   scanf(" %c%*c%c%*c%c%*c%c", &guess_1, &guess_2, &guess_3, &guess_4);
   }
   if (count <= 12 && (guess_1==rn.num_1) && (guess_2==rn.num_2) && (guess_3==rn.num_3) && (guess_4==rn.num_4) ){
-	  printf("Congratulations! You are correct!\n");
+	  printf("Congratulations! You are correct! The pattern was %c %c %c %c \n",rn.num_1, rn.num_2,rn.num_3, rn.num_4);
   }    
 }
