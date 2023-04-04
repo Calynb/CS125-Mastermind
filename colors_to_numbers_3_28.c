@@ -35,7 +35,7 @@ char numbers_to_colors(int number)
   {
     return 'P';
   }  
-  else                                         // Cyana=C
+  else                                         // Cyan=else=C
   {
     return 'C';
   }  
