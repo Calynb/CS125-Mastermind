@@ -22,7 +22,7 @@ char numbers_to_colors(int number)
     return 'R';
   }
   
-  else if (number==3) //blie
+  else if (number==3) //blue
   {
     return 'B';
   }
@@ -37,9 +37,9 @@ char numbers_to_colors(int number)
     return 'Y';
   }
   
-  else if (number==6) // pink
+  else if (number==6) // magenta
   {
-    return 'P';
+    return 'M';
   }
   
   else // cyan
@@ -61,6 +61,6 @@ rand_nums PatternGenerator()
   rn.num_3= numbers_to_colors(rand()%6+2);
   rn.num_4= numbers_to_colors(rand()%6+2);
   
-  //printf("%c %c %c %c \n",rn.num_1, rn.num_2,rn.num_3, rn.num_4); // for testing purposes only
+  printf("%c %c %c %c \n",rn.num_1, rn.num_2,rn.num_3, rn.num_4); // for testing purposes only
   return rn;
 }

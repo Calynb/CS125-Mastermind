@@ -42,7 +42,7 @@ int main()
       while (ans2 == 'y' || ans2=='Y') { 
       MasterMind();
    // prompt user if they want to play agian
-      printf("Do you want to play again? (y/n) ");  
+      printf("\nDo you want to play again? (y/n) ");  
       scanf(" %c" , &ans2);
       
       }

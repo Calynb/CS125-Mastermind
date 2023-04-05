@@ -17,7 +17,7 @@
 #include "PatternGen.h"
 
 // prototypes
-char PrintColors();
+void PrintColors();
 
 int MasterMind()
 {
@@ -25,7 +25,10 @@ int MasterMind()
    rn=PatternGenerator();
    char guess_1, guess_2, guess_3, guess_4;
    int count = 0;
+   char congrats[] = {'C','o','n','g','r','a','t','u','l','a','t','i','o','n','s','!'}; 
+   int i=0;
  
+  //printf("%d %d %d %d", rn.num_1, rn.num_2, rn.num_3, rn.num_4);
   printf("Type your 4 guesses: \n");
   scanf(" %c%*c%c%*c%c%*c%c" , &guess_1, &guess_2, &guess_3, &guess_4);
   //printf("GUESS 1=%c GUESS2=%c GUESS3=%c GUESS4=%c \n", guess1, guess2, guess3, guess4);
@@ -61,8 +64,11 @@ int MasterMind()
   
   
  if (count >= 12){                          // If the user cannot guess the code in 12 turns, the game ends
-	 printf("Sorry, you are out of turns. The pattern is %c %c %c %c", PrintColors(rn.num_1), PrintColors(rn.num_2), PrintColors(rn.num_2), PrintColors(rn.num_3), PrintColors(rn.num_4));
-  
+	 printf("Sorry, you are out of turns. The pattern is ");
+    PrintColors(rn.num_1);
+    PrintColors(rn.num_2);
+    PrintColors(rn.num_3);
+    PrintColors(rn.num_4);
   
 	 break;
     }
@@ -71,7 +77,17 @@ int MasterMind()
  }
   
   if (count <= 12 && (guess_1==rn.num_1) && (guess_2==rn.num_2) && (guess_3==rn.num_3) && (guess_4==rn.num_4) ){
-	  printf("Congratulations! You are correct!The pattern is %c %c %c %c", PrintColors(rn.num_1), PrintColors(rn.num_2), PrintColors(rn.num_2), PrintColors(rn.num_3), PrintColors(rn.num_4));
+    while( congrats[i] ) { 
+        printf( "%c", congrats[i++] );
+        } 
+        
+    printf(" You are correct! "); 
+    printf("\nThe pattern is");
+    PrintColors(rn.num_1);
+    PrintColors(rn.num_2);
+    PrintColors(rn.num_3);
+    PrintColors(rn.num_4);    
+    //printf("%c %c %c %c\nS", PrintColors(rn.num_1), PrintColors(rn.num_2), PrintColors(rn.num_2), PrintColors(rn.num_3), PrintColors(rn.num_4));
   }
  
   
